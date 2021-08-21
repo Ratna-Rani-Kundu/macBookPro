@@ -1,54 +1,70 @@
-function costZero(element, price){
-    const zeroCostId = document.getElementById(element+'-cost');
-    const zeroCostText = zeroCostId.innerText;
-    const zeroCost = parseFloat(zeroCostText);
-    if (price == 0){
-        zeroCostId.innerText = 0; 
+function elementCost(element, value){
+    const priceId = document.getElementById(element+'-cost');
+    const priceText = priceId.innerText;
+    const price = parseFloat(priceText);
+    if (value == 0){
+        priceId.innerText = 0; 
+        
     }
-    else if (price == 20){
-        zeroCostId.innerText = 20; 
+    else if (value == 20){
+        priceId.innerText = 20; 
+        
     }
-    else if (price == 100){
-        zeroCostId.innerText = 100; 
+    else if (value == 100){
+        priceId.innerText = 100; 
+        
     }
-    else if (price == 180){
-        zeroCostId.innerText = 180; 
+    else if (value == 180){
+        priceId.innerText = 180; 
+        
     }
+    else if (value == 1299){
+        priceId.innerText = 1299; 
+        return 1299;
+        
+    }
+    
     
    
      
  }
 document.getElementById('memory-8gb').addEventListener('click',function(){
 
-costZero('memory', 0);
+elementCost('memory', 0);
 })
 document.getElementById('storage-256').addEventListener('click',function(){
 
-costZero('storage', 0);
+ elementCost('storage', 0);
 })
 document.getElementById('delivery-free').addEventListener('click',function(){
-costZero('delivery', 0);
+    elementCost('delivery', 0);
 })
 document.getElementById('delivery-paid').addEventListener('click',function(){
-costZero('delivery', 20);
+     elementCost('delivery', 20);
 })
 document.getElementById('memory-16gb').addEventListener('click',function(){
 
-    costZero('memory', 180);
+    elementCost('memory', 180);
     })
 document.getElementById('storage-512').addEventListener('click',function(){
 
-    costZero('storage',100);
+     elementCost('storage',100);
     })
 document.getElementById('storage-1tb').addEventListener('click',function(){
 
-    costZero('storage',180);
+      elementCost('storage',180);
     })
 
-// function price180(){
-//     const zeroCostId = document.getElementById(element+'-cost');
-//     const zeroCostText = zeroCostId.innerText;
-//     const zeroCost = parseFloat(zeroCostText);
-//     zeroCostId.innerText = 0;
-     
-//  }
+//     // calculaton
+
+// pomo-code
+document.getElementById('apply-button').addEventListener('click', function(){
+    const pomoCodeField = document.getElementById('pomo-code');
+    const pomoCode = pomoCodeField.value;
+    if(pomoCode == 'stevekaku')
+    {
+        let total = document.getElementById('total').innertext
+        pomoCodeField.value = ''; 
+    }
+    
+})
