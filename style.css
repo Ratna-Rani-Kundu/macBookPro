@@ -2,19 +2,3 @@ hr{
     border: 1px solid rgba(255, 255, 255, .9);
 
 }
-
-/* //  const bestCost = elementCost('best',1299);
- 
-// const totalPriceId = document.getElementById('total-price')
-//  const  totalPriceText = totalPriceId.innerText;
-// const  totalPrice = parseFloat(totalPriceText);
-//  totalPriceId.innerText  = bestCost+totalPrice;
-// +a+ b+c+d+e+f+g  
-// const a = elementCost('memory', 0);
-//     const b = elementCost('storage', 0);
-//     const c = elementCost('delivery', 0);
-    
-//     const d = elementCost('delivery', 20);
-//     const e = elementCost('memory', 180);
-//     const f =    elementCost('storage',100);
-//     const g =  elementCost('storage',180); */
